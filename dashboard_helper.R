@@ -9,7 +9,7 @@ library(showtext)
 
 font_add_google(name = "quicksand",  family = "quicksand")
 
-tidy_reviews <- vroom::vroom("tidy_reviews.csv", show_col_types = FALSE)
+tidy_reviews <- vroom::vroom("tidy_reviews_new2.csv", show_col_types = FALSE)
 
 all_location <- tidy_reviews %>%
   distinct(location) %>%
